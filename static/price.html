@@ -6,13 +6,34 @@
 </head>
 <body>
     <FORM ACTION="/cgi-bin/price.py" method="post">
-        <B>请输入店铺价格：</B>
-        <input TPYE="text" NAME="shopPrice" SIZE="15">
-        <B>请输入店铺优惠：</B>
-        <input TPYE="text" NAME="shopOffer" SIZE="15">
-        <B>全网优惠:</B>
-        <input TPYE="text" NAME="netOffer" SIZE="15">
-        <INPUT TYPE="submit">
+        <div>
+            <B>请输入店铺价格和店铺优惠：</B><br>
+            <span>
+                <B>店铺1</B>
+                <input TPYE="text" NAME="shopPrice1" VALUE="0" SIZE="15">
+                <B>优惠：</B>
+                <input TPYE="text" NAME="shopOffer1" VALUE="0" SIZE="15">
+            </span><br>
+            <span>
+                <B>店铺2</B>
+                <input TPYE="text" NAME="shopPrice2" VALUE="0" SIZE="15">
+                <B>优惠：</B>
+                <input TPYE="text" NAME="shopOffer2" VALUE="0" SIZE="15">
+            </span><br>
+            <span>
+                <B>店铺3</B>
+                <input TPYE="text" NAME="shopPrice3" VALUE="0" SIZE="15">
+                <B>优惠：</B>
+                <input TPYE="text" NAME="shopOffer3" VALUE="0" SIZE="15">
+            </span><br>
+        </div>
+        <div>
+            <B>全网优惠:</B>
+            <input TPYE="text" NAME="netOffer" VALUE="0" SIZE="15">
+        </div>
+        <div>
+            <INPUT TYPE="submit">
+        </div>
     </FORM>
 </body>
 </html>
