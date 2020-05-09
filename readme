@@ -49,3 +49,9 @@ def：优惠类型：打折
 
 cgi 启动命令：
 python -m http.server --cgi
+
+flask：
+启动/web/app.py
+目录结构：
+/web
+/templates

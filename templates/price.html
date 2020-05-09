@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优惠计算</title>
+</head>
+<body>
+    <FORM ACTION="/price" method="post">
+        <p>Welcome, {{ username }}!</p>
+        <div>
+            <legend>请输入店铺价格和店铺优惠：</legend>
+            <span>
+                <B>店铺1</B>
+                <input tpye="text" name="shopPrice1" placeholder="0">
+                <B>优惠：</B>
+                <input tpye="text" name="shopOffer1" placeholder="0">
+            </span><br>
+            <span>
+                <B>店铺2</B>
+                <input tpye="text" name="shopPrice2" placeholder="0">
+                <B>优惠：</B>
+                <input tpye="text" name="shopOffer2" placeholder="0">
+            </span><br>
+        <div>
+            <B>全网优惠:</B>
+            <input tpye="text" name="netOffer" placeholder="0">
+        </div>
+        <div>
+            <p><button type="submit">计算</button></p>
+        </div>
+    </FORM>
+</body>
+</html>
