@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>价格优惠计算</title>
+</head>
+<body>
+    <h2>请输入价格，以及店铺优惠</h2>
+    <form action="/price" method="post">
+         <p>
+            <b>店铺1</b><br>
+            <b>价格：</b>
+            <input  name="prices_01" placeholder="0">
+            <b>优惠：</b>
+            <input  name="discount_01" placeholder="例如：100-10">
+        </p>
+
+        <p><button type="submit">提交</button></p>
+    </form>
+    <div>
+        <b>总价：</b>
+        {% if count %}
+        <b><p style="color: aqua;font-size: 25px">{{count}}</p></b>
+        {% endif %}
+    </div>
+</body>
+</html>
