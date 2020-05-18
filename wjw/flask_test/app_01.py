@@ -10,7 +10,7 @@ def home():
 def count():
     try:
         prices1_list= request.form['prices_01']
-        count_Price,Price_Single,n =Price_count.PriceCount(prices1_list)
+        count_Price,Price_Single,n =count.PriceCount(prices1_list)
         Single_list = ''
         for i in range(0,n):
             Single_list += str(Price_Single[i])
