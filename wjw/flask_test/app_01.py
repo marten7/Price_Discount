@@ -1,5 +1,5 @@
 from flask import Flask,request,render_template
-from Price_Discount.wjw.flask_test import Price_count
+from Price_Discount.wjw.flask_test import count
 
 app = Flask(__name__)
 @app.route('/price',methods=['get'])
