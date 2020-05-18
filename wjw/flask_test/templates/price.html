@@ -10,7 +10,7 @@
          <p>
             <b>店铺1</b><br>
             <b>价格：</b>
-            <input  name="prices_01" placeholder="0">
+            <input  name="prices_01" placeholder="多个价格请以逗号或空格隔开" size="25">
             <b>优惠：</b>
             <input  name="discount_01" placeholder="例如：100-10">
         </p>
@@ -18,9 +18,18 @@
         <p><button type="submit">提交</button></p>
     </form>
     <div>
-        <b>总价：</b>
+        {% if message %}
+        <b><p style="color: red;font-size: 25px">{{message}}</p></b>
+        {% endif %}
         {% if count %}
-        <b><p style="color: aqua;font-size: 25px">{{count}}</p></b>
+        <b>总价：</b>
+        <b><p style="color: blue;font-size: 25px">{{count}}</p></b>
+        {% endif %}
+        <br>
+
+        {% if price %}
+        <b>商品单价：</b>
+        <b><p style="color: greenyellow;font-size: 25px">{{price | safe}}</p></b>
         {% endif %}
     </div>
 </body>
